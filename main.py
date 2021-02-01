@@ -4,13 +4,15 @@ import config
 import random
 from datetime import datetime
 import time
+import os
+from boto.s3.connection import S3Connection
 
 #Config
-reddit = praw.Reddit(client_id = config.clientID,
-                    client_secret = config.clientSecret,
-                    username = config.redditID,
-                    password = config.redditPassword,
-                    user_agent = config.userAgent,)
+reddit = praw.Reddit(client_id = os.environ['clientID'],
+                    client_secret = os.environ['clientSecret'],
+                    username = os.environ['redditID'],
+                    password = os.environ['redditPassword'],
+                    user_agent = os.environ['userAgent'],)
 
 #Posts the submisson
 def postSubmisson():
