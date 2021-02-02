@@ -1,6 +1,6 @@
 import praw
 import os
-import config
+#import config
 import random
 from datetime import datetime
 import time
