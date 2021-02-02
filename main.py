@@ -5,7 +5,6 @@ import random
 from datetime import datetime
 import time
 import os
-from boto.s3.connection import S3Connection
 
 #Config
 reddit = praw.Reddit(client_id = os.environ['clientID'],
