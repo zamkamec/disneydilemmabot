@@ -38,6 +38,9 @@ def postSubmisson():
         else:
             print("No Suitable Post Left")
 
+print('App Started')
+postSubmisson()
+
 #Runs the code every 15 minutes
 while True:
     print("Update data:", datetime.now())
